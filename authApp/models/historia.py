@@ -1,4 +1,5 @@
 from django.db import models
+from .paciente import Paciente
 
 class Historia(models.Model):
     idhistoria = models.AutoField(primary_key=True)
@@ -7,5 +8,5 @@ class Historia(models.Model):
     entorno = models.CharField("Entorno", max_length=45)
     fecha = models.DateField("Fecha", max_length=45)
     descripcion = models.CharField("Descripcion", max_length=45)
-    #idpaciente = models.ForeignKey(Paciente, related_name='historia', on_delete=models.CASCADE)
+    idpaciente = models.ForeignKey(Paciente, related_name='historia', default=0, on_delete=models.CASCADE)
     
