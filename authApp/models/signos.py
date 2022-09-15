@@ -9,6 +9,6 @@ class Signos(models.Model):
     temperatura = models.DecimalField("Temperatura", default=0, max_digits=3,decimal_places=1)
     presion_arterial = models.IntegerField("Presión Arterial", default=0)
     glicemias = models.CharField("Glicemias", max_length=45)
-    fecha = models.DateTimeField("Glicemias", max_length=45)
+    fecha = models.DateTimeField("Fecha", max_length=45)
     idpaciente = models.ForeignKey(Paciente, related_name='signos', default=0, on_delete=models.CASCADE)
     

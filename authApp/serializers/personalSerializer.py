@@ -1,7 +1,7 @@
-from authApp.models.personal import Personal
+from authApp.models.personal_salud import personalSalud
 from rest_framework import serializers
 
 class PersonalSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Personal
-        fields = ['balance', 'lastChangeDate', 'isActive']
+        model = personalSalud
+        fields = ['especialidad', 'registro', 'rol']

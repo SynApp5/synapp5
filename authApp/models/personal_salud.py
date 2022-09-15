@@ -6,5 +6,5 @@ class personalSalud(models.Model):
     especialidad = models.CharField("Especialidad", max_length=45)
     registro = models.CharField("Registro Médico", max_length=45)
     rol = models.CharField("Rol", max_length=45)
-    idusuario = models.ForeignKey(Usuario, related_name='personalSalud', default=0, on_delete=models.CASCADE)
+    idusuario = models.ForeignKey(Usuario, related_name='personal_salud', default=0, on_delete=models.CASCADE)
     

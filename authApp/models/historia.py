@@ -1,6 +1,7 @@
 from django.db import models
 from .paciente import Paciente
 
+
 class Historia(models.Model):
     idhistoria = models.AutoField(primary_key=True)
     sugerencia = models.CharField("Sugerencia", max_length=45)
