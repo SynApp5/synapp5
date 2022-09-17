@@ -5,7 +5,7 @@ class UsuarioManager(BaseUserManager):
     def create_user(self,username):
         if not username:
             raise ValueError('Error al ingresar usuario!')
-        user=self.model(username=username)
+        user=self.model(username=Usuario)
         user.save(using=self._db)
         return user
 
@@ -20,5 +20,5 @@ class Usuario(AbstractBaseUser,PermissionsMixin):
     def save(self,**kwargs):
         super().save(**kwargs)
     
-    objects: UsuarioManager()
-    USERNAME_FIELD='username'
+    objects = UsuarioManager()
+    USERNAME_FIELD='idusuario'

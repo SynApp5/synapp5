@@ -99,14 +99,15 @@ WSGI_APPLICATION = 'synApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd2rhkgn287pjhi',
-        'USER': 'naprksjgwvjlyz',
-        'PASSWORD': '7277df5f826f29eccbfde0fccbf662d30132212fa421d007aef6c4521f3b13c6',
-        'HOST': 'ec2-34-234-240-121.compute-1.amazonaws.com',
+        'NAME': 'd7uj4f7o37nbvg',
+        'USER': 'yptremsiwnkjzj',
+        'PASSWORD': 'a77c2d09079c2d8ad329633c781c7561c767b9d28e0cde96b21e71194065871e',
+        'HOST': 'ec2-3-225-110-188.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
 
+AUTH_USER_MODEL = 'authApp.usuario'
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
